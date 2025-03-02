@@ -7,11 +7,27 @@
   <!-- Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .linkedin-button {
+      background-color: #0077b5;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .linkedin-button:hover {
+      background-color: #005f85;
+    }
+  </style>
 </head>
 <body>
   <header>
     <nav>
-      <a href="index.html" class="logo">GirlsWhoCodeDupe</a>
+      <a href="index.html" class="logo">
+        <img src="images/codher_logo.png" alt="CodeHer Logo" class="logo-img" />
+      </a>
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="resources.html">Resources</a></li>
@@ -19,9 +35,6 @@
         <li><a href="community.html">Community</a></li>
         <li><a href="about.html">About</a></li>
       </ul>
-      <button class="nav-toggle" aria-label="toggle navigation">
-        <span class="hamburger"></span>
-      </button>
     </nav>
   </header>
 
@@ -29,11 +42,19 @@
     <section class="page-content">
       <h1>Community</h1>
       <p>Placeholder for community content. Connect and share with fellow coders.</p>
+
+      <!-- LinkedIn Follow Button -->
+      <section class="linkedin-widget">
+        <h2>Use LinkedIn to find Your Community</h2>
+        <a href="https://www.linkedin.com" target="_blank">
+          <button class="linkedin-button">LinkedIn</button>
+        </a>
+      </section>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Girls Who Code Dupe. All rights reserved.</p>
+    <p>&copy; 2025 CodeHer. All rights reserved.</p>
   </footer>
   <script src="js/script.js"></script>
 </body>
