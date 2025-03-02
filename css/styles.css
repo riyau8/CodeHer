@@ -70,6 +70,19 @@ header {
   color: #fff;
 }
 
+.influential-women {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.influential-women img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
 /* Hero Section */
 .hero {
   padding: 120px 20px 80px;
