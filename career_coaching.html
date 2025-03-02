@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Career Coaching with AI - CodeHer</title>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+ 
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html" class="logo">GirlsWhoCodeDupe</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="career_coaching.html">AI Career Coaching</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <main>
+      <div style="height: 150px;"></div>
+      <h2>Interactive AI Chatbox</h2>
+      <h3>Our AI Chatbot uses Gemini API to provide personalized career coaching to help prepare you for the job application process. Our chatbot has two modes: you can either ask for tailed resume feedback specific to the role you are applying for or you can simulate behavioral interview scenarios for the company you want to work for.</h3>
+      <!--<div id="chat-container">
+          <div id="chat-box"></div>
+          <form id="chat-form">
+              <input type="text" id="user-input" placeholder="Ask about period supplies or healthcare..." required>
+              <button type="submit">Send</button>
+          </form>
+      </div>
+      <div class="chat-list"></div>-->
+  <!-- Typing Area -->
+      <!-- Chat List / Container -->
+  <div class="chat-list"></div>
+  <div class="mode-selector">
+    <label>
+      <input type="radio" name="mode" value="resume" checked>
+      Resume Feedback
+    </label>
+    <label>
+      <input type="radio" name="mode" value="interview">
+      Behavioral Interview Simulation
+    </label>
+  </div>
+  <!-- Typing Area -->
+  <div class="typing-area">
+      <form action="#" class="typing-form">
+      <div class="input-wrapper">
+          <input type="text" placeholder="Type Here" class="typing-input" required />
+          <button id="send-message-button" class="icon material-symbols-rounded">send</button>
+      </div>
+      <div class="action-buttons">
+          <span id="delete-chat-button" class="icon material-symbols-rounded">delete</span>
+      </div>
+      </form>
+      
+  </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 CodeHer. All rights reserved.</p>
+  </footer>
+  <script src="js/server.js"></script>
+</body>
+</html>
