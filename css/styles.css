@@ -59,7 +59,7 @@ header {
   text-decoration: none;
   color: #fff;
   font-size: 1rem;
-  transition: color var(--transition-speed);
+  transition: background var(--transition-speed), color var(--transition-speed);
   padding: 8px 12px;
   border-radius: 6px;
 }
@@ -86,11 +86,23 @@ header {
   font-size: 3rem;
   font-family: var(--heading-font);
   color: var(--primary-color);
+  animation: fadeIn 1s ease-out;
 }
 
 .hero h3, .hero p {
   font-size: 1.2rem;
   color: #555;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Feature Section */
@@ -135,25 +147,36 @@ footer {
   font-weight: bold;
 }
 
+/* Mobile Navigation Toggle */
+.nav-toggle {
+  display: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+.nav-toggle.active {
+  display: block;
+}
+
 /* Responsive Styles */
 @media (max-width: 768px) {
   .nav-links {
-      position: absolute;
-      top: var(--nav-height);
-      left: 0;
-      width: 100%;
-      flex-direction: column;
-      background: var(--primary-color);
-      display: none;
+    position: absolute;
+    top: var(--nav-height);
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background: var(--primary-color);
+    display: none;
   }
   .nav-links li {
-      margin: 10px 0;
-      text-align: center;
+    margin: 10px 0;
+    text-align: center;
   }
   .nav-toggle {
-      display: block;
+    display: block;
   }
   .nav-links.active {
-      display: flex;
+    display: flex;
   }
 }
